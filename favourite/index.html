@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorites Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 My Favorites</h1>
+    
+    <form id="addForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="imageUrl" placeholder="Image URL" required />
+      <input type="text" id="description" placeholder="Short Description" />
+      <select id="category">
+        <option value="Book">📚 Book</option>
+        <option value="Game">🎮 Game</option>
+        <option value="Podcast">🎧 Podcast</option>
+        <option value="Show">📺 Show</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search..." />
+      <select id="filterCategory">
+        <option value="All">All</option>
+        <option value="Book">Book</option>
+        <option value="Game">Game</option>
+        <option value="Podcast">Podcast</option>
+        <option value="Show">Show</option>
+      </select>
+    </div>
+
+    <div id="favoritesList" class="card-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
